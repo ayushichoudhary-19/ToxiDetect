@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToxiDetect</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <h1> ToxiDetect</h1>
+    <p>A tool that detects toxicity in your message</p>
+    <form onsubmit="formSubmit(event)">
+        <input type="text" placeholder="Write a message to detect its toxicity" id="input"></input>
+        <button type="submit">Detect</button>
+    </form>
+    <p id="response" class=""></p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
